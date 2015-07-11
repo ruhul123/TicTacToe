@@ -139,4 +139,15 @@
         android:layout_toRightOf="@+id/c2"
         android:layout_toEndOf="@+id/c2"
         android:onClick="c3"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/enternameX"
+        android:layout_alignEnd="@+id/enternameX"
+        android:layout_marginBottom="34dp"
+        android:onClick="reset"/>
 </RelativeLayout>
