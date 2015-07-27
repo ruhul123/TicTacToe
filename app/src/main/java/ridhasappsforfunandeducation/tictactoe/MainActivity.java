@@ -141,7 +141,7 @@ public class MainActivity extends ActionBarActivity {
     public void getWinString(String plI) {
         String playername;
 
-  if (plI=="O"){
+        if (plI=="O"){
             playername = enternameO.getText().toString();
         }else {
             playername = enternameX.getText().toString();
@@ -150,6 +150,11 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+
+
+    public void btnCommon(Button b){
+
+    }
 
     public void a1(View view) {
         String aa1 = a1.getText().toString();
@@ -166,7 +171,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
             aa1 = a1.getText().toString();
-            if ((row1(aa1) == true) || (col1(aa1) == true) || (dialeftright(aa1) == true)) {
+            if ((row1(aa1)) || (col1(aa1) == true) || (dialeftright(aa1) == true)) {
                 getWinString(aa1);
 
             }
@@ -214,8 +219,11 @@ public class MainActivity extends ActionBarActivity {
 
             }
             aa3 = a3.getText().toString();
-            if ((row1(aa3) == true) || (col3(aa3) == true) && (diarightleft(aa3) == true)) {
-                getWinString(aa3);
+
+            //MRC -if ((row1(aa3) == true) || (col3(aa3) == true) && (diarightleft(aa3) == true)) {
+
+            if ((row1(aa3) == true) || (col3(aa3) == true) || (diarightleft(aa3) == true)) {
+                //getWinString(aa3);
             }
         } else {
             String illegal_move = ("that is an illegal move!");
@@ -237,7 +245,7 @@ public class MainActivity extends ActionBarActivity {
             }
             bb1 = b1.getText().toString();
             if ((row2(bb1) == true) || (col1(bb1) == true)) {
-                getWinString(bb1);
+                //getWinString(bb1);
             }
         } else {
             String illegal_move = ("that is an illegal move!");
@@ -304,7 +312,8 @@ public class MainActivity extends ActionBarActivity {
 
             }
             cc1 = c1.getText().toString();
-            if ((row3(cc1) == true) || (col1(cc1) == true) && (dialeftright(cc1) == true)) {
+            //MRC - if ((row3(cc1) == true) || (col1(cc1) == true) || (dialeftright(cc1) == true))
+            if ((row3(cc1) == true) || (col1(cc1) == true) || (diarightleft(cc1) == true)) {
                 getWinString(cc1);
             }
         } else {
@@ -350,7 +359,7 @@ public class MainActivity extends ActionBarActivity {
 
             }
             cc3 = c3.getText().toString();
-            if ((row3(cc3) == true) || (col3(cc3) == true) && (dialeftright(cc3) == true)) {
+            if ((row3(cc3) == true) || (col3(cc3) == true) || (dialeftright(cc3) == true)) {
                 getWinString(cc3);
             }
         } else {
